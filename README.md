@@ -24,11 +24,16 @@
 
 
 <strong>Open Command Prompt:</strong>
+
 <p>Go to Project Location:</p>
+
 <li>C:\Users\XXXX\Desktop\SB-SSL-Project></li>
+
 <p>Type:</p>
-<p>keytool -genkey -alias chocolate -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore chocolate.p12 -validity 365</p>
-<p>Press Enter>/p>
+
+<li>keytool -genkey -alias chocolate -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore chocolate.p12 -validity 365</li>
+
+<strong>Press Enter</strong>
 
 <p>Enter keystore password: XXXX</p>
 
