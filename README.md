@@ -32,7 +32,7 @@
 
 <p>Type:</p>
 
-<li>keytool -genkey -alias chocolate -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore chocolate.p12 -validity 365</li>
+<li>keytool -genkey -alias SBSSLCert -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore SBSSLCert.p12 -validity 365</li>
 </br>
 
 <strong>Press Enter</strong>
@@ -70,12 +70,12 @@
 </br>
 
 <strong>Refresh you Project in IDE</strong>
-<p>move chocolate.p12 to src\main\resource folder</p>
+<p>move SBSSLCert.p12 to src\main\resource folder</p>
 
 <strong>Modify application.properties files to bind self-signed certificate with server</strong>
 
 <li>server.port=8443</li>
-<li>server.ssl.key-alias=chocolate</li>
-<li>server.ssl.key-store-password=chocolate</li>
-<li>server.ssl.key-store=classpath:chocolate.p12</li>
+<li>server.ssl.key-alias=SBSSLCert</li>
+<li>server.ssl.key-store-password=SBSSLCert</li>
+<li>server.ssl.key-store=classpath:SBSSLCert.p12</li>
 <li>server.ssl.key-store-type=PKCS12</li>
